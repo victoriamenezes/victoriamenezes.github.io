@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: space-around;
     height: 100vh;
-    overflow: auto;
+    overflow: hidden;
     background-image: none;
     background-size: cover;
     background-position: bottom;
@@ -29,12 +29,11 @@
     display: flex;
     justify-content: center;
     background-color: inherit;
-    font-family: 'Rubik Glitch';
-    font-size: 50px;
+    font-family: 'Press Start 2P';
+    font-size: 2rem;
     color: #2f5f6ccf;
     text-decoration: none;
     font-weight: lighter;
-    font-family: 'Rubik Glitch';
     text-shadow:
         0.1em 0 0 rgb(197 214 211),
         0 -0.05em 0 rgb(224 116 172 / 75%),
