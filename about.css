@@ -147,7 +147,7 @@
     perspective: 1000rem;
 }
 
-tools-title {
+.tools-title {
     display: flex;
 }
 

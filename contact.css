@@ -11,22 +11,6 @@
     clip-path: polygon(0 100%, 100% 100%, 100% 30%, 70% 30%, 50% 0, 30% 30%, 0 30%)
 }
 
-
-/* .contact-skills {
-
-
-} */
-
-/* .contact-skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100vh;
-    overflow: auto;
-    /* background-image: url(images/row-3-column-1.jpg); */
-
-
-
 .clippath-shadow-2 {
     filter: drop-shadow(4px -2px 9px rgba(0, 0, 0, 0.7));
     display: flex;
@@ -37,4 +21,3 @@
     justify-content: space-evenly;
     width: 100%;
 }
-

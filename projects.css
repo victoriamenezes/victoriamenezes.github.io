@@ -9,11 +9,9 @@
     justify-content: space-around;
     height: 100vh;
     overflow: hidden;
-    /* background-color:#ffffff; */
     background-size: cover;
     background-position: bottom;
     background-image: none;
-    /* background-blend-mode: hue; */
 }
 
 
@@ -37,7 +35,6 @@
     animation-timing-function: ease-in-out;
     margin-left: 30px;
     margin-top: 5px;
-    /* overflow: auto; ???????? */
 }
 
 /* CARDS */
@@ -47,28 +44,18 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
-    /* height: 100vh;
-    overflow: auto;
-    background-image: url(images/back-img.jpg);
-    background-size: cover;
-    background-position: bottom;
-    filter: blur(8px); */
-    /* background-image: linear-gradient(to top, #6f7a88, #647280, #5a6b77, #50636e, #465c65, #3f555e, #384f56, #31484f, #2b4148, #253941, #20323a, #1a2b33); */
 }
 
 
 .row-projects-1 {
     display: flex;
     justify-content: space-evenly;
-    /* height: fit-content; */
-    /* filter: drop-shadow(0 0 2rem #ffffffb9); */
     filter: drop-shadow(4px -2px 9px rgba(0, 0, 0, 0.7));
 }
 
 .text-front {
     font-family: 'Press Start 2P';
     text-decoration: none;
-    /* letter-spacing: 8px; */
     color: #eef1f2;
     text-shadow: 0.2em 0 0 rgb(40 158 195 / 75%), 0 0.04em 0 rgb(241 0 255 / 38%), 0.19em 0 0 rgb(0 0 0);
     margin: 20% 40%;
@@ -93,7 +80,6 @@
 .row-projects-2 {
     display: flex;
     justify-content: space-evenly;
-    /* height: fit-content; */
     filter: drop-shadow(4px -2px 9px rgba(0, 0, 0, 0.7));
 }
 
@@ -113,8 +99,6 @@
 }
 
 .card-side {
-    /* background-color: rgb(204, 231, 53); */
-    /* border-radius: 50%; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -130,15 +114,9 @@
 }
 
 .card-side--front {
-    /* display: flex;
-    align-content: center;
-    justify-content: center; */
-    /* background-color: rgba(255, 255, 255, 0.092); */
     background-image: url(images/back-img.jpg);
     background-position: center;
     background-size: cover;
-    /* background-image: inherit; */
-    /* background-image: inherit; */
     backface-visibility: hidden;
 }
 
@@ -146,11 +124,9 @@
     display: flex;
     transform: rotateY(180deg);
     background-image: none;
-    /* background-image: url(images/row-2-column-1.jpg); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* backface-visibility: hidden; */
 }
 
 .card:hover .card-side--front {
@@ -159,5 +135,4 @@
 
 .card:hover .card-side--back {
     transform: rotateY(0);
-
 }
