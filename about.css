@@ -39,8 +39,12 @@
         0 -0.05em 0 rgb(224 116 172 / 75%),
         0.1em 0.06em 0 #33cbf4dc;
     letter-spacing: 20px;
-    animation-name: moveDown;
+    animation-name: float-text;
     animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
 }
 
 .container-about {
@@ -51,7 +55,7 @@
 }
 
 
-.black-hole {
+.turn-around {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -68,7 +72,7 @@
     perspective: 1000rem;
 }
 
-.black-hole-side {
+.turn-around-side {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -84,25 +88,25 @@
     backface-visibility: hidden;
 }
 
-.black-hole-side--front {
-    background-color: #314850;
-    filter: drop-shadow(4px -2px 9px rgba(0, 0, 0, 0.7));
+.turn-around-side--front {
+  display: flex;
+  background-image: url("images/tori-transparent.png");
+  background-color:none;
+  background-position: center;
+  background-size: cover;
 }
 
-.black-hole-side--back {
-    display: flex;
+.turn-around-side--back {
+  transform: rotateY(180deg);
+  background-color: #314850;
+  filter: drop-shadow(4px -2px 9px rgba(0, 0, 0, 0.7));
+}
+
+.turn-around:hover .turn-around-side--front {
     transform: rotateY(180deg);
-    background-image: url("images/tori-transparent.png");
-    background-color:none;
-    background-position: center;
-    background-size: cover;
 }
 
-.black-hole:hover .black-hole-side--front {
-    transform: rotateY(180deg);
-}
-
-.black-hole:hover .black-hole-side--back {
+.turn-around:hover .turn-around-side--back {
     transform: rotateY(0);
 }
 
@@ -173,6 +177,7 @@ figcaption {
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+
 }
 
 .tools-side-front {
