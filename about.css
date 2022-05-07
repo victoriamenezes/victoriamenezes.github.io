@@ -98,8 +98,7 @@
 
 .turn-around-side--back {
   transform: rotateY(180deg);
-  background-color: #314850;
-  filter: drop-shadow(4px -2px 9px rgba(0, 0, 0, 0.7));
+  background-color: none;
 }
 
 .turn-around:hover .turn-around-side--front {
@@ -110,19 +109,28 @@
     transform: rotateY(0);
 }
 
-
-.description-about {
+.description-about h2 {
     font-family: 'Roboto Mono', monospace;
     text-decoration: none;
     text-align: center;
-    font-size: 0.9rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
     letter-spacing: 0.3rem;
 }
 
-#emojis {
+.description-about h3 {
+  text-decoration: none;
+  text-align:justify;
+  font-size: 1rem;
+  /* letter-spacing: 0.4rem; */
+  color: #1c8d9e;
+}
+
+/* #emojis {
   letter-spacing: 0.9rem;
   padding-top: 1.8rem;
-}
+  filter: drop-shadow(4px -2px 9px rgba(255, 255, 255, 0.7));
+} */
 
 .container-habilities {
     display: flex;
