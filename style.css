@@ -151,7 +151,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 667px) and (max-width: 959px) {
 
   /* ABOUT */
   .about-me {
@@ -169,6 +169,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
   }
 
   .turn-around, .turn-around-side {
@@ -248,6 +249,114 @@ body {
 
   .row-projects-1, .row-projects-2 {
     margin: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 666px) {
+
+  /* ABOUT */
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .about-title, .projects-title {
+    font-size: 1rem;
+  }
+
+  .container-about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .container-title {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .turn-around, .turn-around-side {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+  }
+
+  /* SKILLS */
+
+  .container-habilities {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20rem;
+    width: 30rem;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+
+  .tools, .permanent, .tools-side {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 20rem;
+  }
+
+  .permanent img, .tools-side-front img, .tools-side-back img {
+    height: 2rem;
+    width: 2rem;
+
+  }
+
+  .description-about h2 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .description-about h3 {
+    font-size: 0.9rem;
+    text-align: justify;
+    width: 20rem;
+  }
+
+  /* PROJECTS */
+
+  .global-projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .text-front {
+    font-size: 1.3rem;
+  }
+
+  .text-back {
+    font-size: 0.9rem;
+    width: 20rem;
+  }
+
+  .card, .card-side {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .row-projects-1, .row-projects-2 {
+    margin: 1rem;
+  }
+
+  .permanent figcaption, .tools-side figcaption {
+    display: none;
+  }
+  .permanent figure, .tools-side figure {
+    margin: 0.5rem;
   }
 
 }
