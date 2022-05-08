@@ -142,3 +142,112 @@ body {
   50%  { transform: translate(0, 0); }
   100%   { transform: rotateY(180deg); }
 }
+
+@media (max-width: 600px)
+{
+  .facet_sidebar
+  {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* ABOUT */
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .about-title, .projects-title {
+    font-size: 1.5rem;
+  }
+
+  .container-about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .turn-around, .turn-around-side {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+  }
+
+  .description-about h3 {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+  .container-habilities {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+  /* SKILLS */
+
+  .container-habilities {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20rem;
+    width: 30rem;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .permanent, .tools-side {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .permanent img, .tools-side-front img, .tools-side-back img {
+    height: 2rem;
+    width: 2rem;
+
+  }
+
+  .description-about h2 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .description-about h3 {
+    width: 30rem;
+  }
+
+  /* PROJECTS */
+
+  .global-projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .text-front {
+    font-size: 1.3rem;
+  }
+
+  .text-back {
+    font-size: 0.9rem;
+  }
+
+  .card, .card-side {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .row-projects-1, .row-projects-2 {
+    margin: 1rem;
+  }
+
+}
